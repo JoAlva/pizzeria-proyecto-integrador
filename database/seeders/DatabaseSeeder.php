@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Rol;
+use App\Models\Usuario;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,11 +16,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $admin = Rol::firstOrCreate(
+            ['nombre_rol' => 'admin'],
+            ['descripcion' => 'Acceso completo al panel administrativo']
+        );
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        Rol::firstOrCreate(
+            ['nombre_rol' => 'trabajador'],
+            ['descripcion' => 'Acceso operativo para gestionar pedidos y productos']
+        );
+
+        Usuario::firstOrCreate([
+            'correo' => 'admin@rooster.test',
+        ], [
+            'nombre' => 'Administrador',
+            'contrasena' => 'password123',
+            'id_rol' => $admin->id_rol,
         ]);
     }
 }
