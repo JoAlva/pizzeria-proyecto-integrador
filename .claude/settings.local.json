@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf vendor/laravel/framework)",
+      "Bash(composer install *)",
+      "PowerShell(Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntiVirusProduct -ErrorAction SilentlyContinue)",
+      "Bash(mkdir -p \"/c/laragon/www/ProyectoPizza2026\")",
+      "Bash(tar --exclude='./vendor' --exclude='./node_modules' -cf - .)",
+      "Bash(tar -xf - -C \"/c/laragon/www/ProyectoPizza2026\")"
+    ]
+  }
+}

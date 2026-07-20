@@ -1,0 +1,14 @@
+/* Fondo "horno de leña" simulado con gradientes (sin depender de una foto externa).
+   TODO: si prefieres una fotografía real del horno encendido, sustituye esta clase
+   por background-image: url('/images/hero-fire.jpg') con la misma capa de overlay. */
+.hero-fire {
+    background-image: url('/images/IdentidadROOSTER0008.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+html {
+    scroll-padding-top: 5rem; /* compensa el header sticky al navegar por anclas */
+}
