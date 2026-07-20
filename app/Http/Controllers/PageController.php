@@ -178,6 +178,7 @@ class PageController extends Controller
             ['name' => 'Smoothie Natural (fruta de temporada)', 'price' => '2,000'],
             ['name' => 'Gaseosa (Pop Soda)', 'price' => '1,500'],
             ['name' => 'Cerveza Premium', 'price' => '2,300'],
+
         ];
 
         $features = [
@@ -225,5 +226,6 @@ class PageController extends Controller
             'pizzas', 'meats', 'sides', 'pastas', 'pastaBuilder', 'drinks',
             'features', 'contactInfo'
         ));
+
     }
 }

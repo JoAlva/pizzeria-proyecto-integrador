@@ -6,7 +6,15 @@
       "PowerShell(Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntiVirusProduct -ErrorAction SilentlyContinue)",
       "Bash(mkdir -p \"/c/laragon/www/ProyectoPizza2026\")",
       "Bash(tar --exclude='./vendor' --exclude='./node_modules' -cf - .)",
-      "Bash(tar -xf - -C \"/c/laragon/www/ProyectoPizza2026\")"
+      "Bash(tar -xf - -C \"/c/laragon/www/ProyectoPizza2026\")",
+      "Bash(php -r \"json_decode\\(file_get_contents\\('composer.json'\\)\\); echo json_last_error_msg\\(\\);\")",
+      "Bash(php -r \"json_decode\\(file_get_contents\\('composer.lock'\\)\\); echo json_last_error_msg\\(\\);\")",
+      "Bash(composer update *)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(composer validate *)",
+      "Bash(git add *)",
+      "Bash(git status *)",
+      "Bash(php artisan *)"
     ]
   }
 }
