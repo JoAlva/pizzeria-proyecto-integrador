@@ -6,18 +6,18 @@
 
     {{-- HERO --}}
     <section id="inicio" class="relative hero-fire text-white">
-        <div class="relative max-w-4xl mx-auto px-6 py-32 md:py-44 text-center">
-           
-          
+        <div class="relative max-w-4xl mx-auto px-6 py-32 md:py-44 text-center flex items-center justify-center">
+            <img src="/images/RoosterLogo1.png" alt="Rooster Pizza &amp; Grill"
+                 class="w-full max-w-md md:max-w-lg">
         </div>
     </section>
 
     {{-- MENU --}}
-    <section id="menu" class="bg-slate-50 py-24">
+    <section id="menu" class="bg-[#0d0d0d] py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto">
-                <h2 class="font-display font-bold text-3xl md:text-4xl text-ink">Nuestro Menú</h2>
-                <p class="mt-4 text-slate-500">
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-white">Nuestro Menú</h2>
+                <p class="mt-4 text-slate-300">
                     Todas nuestras pizzas están hechas con masa fresca preparada diariamente
                     y horneadas en nuestro horno de leña tradicional
                 </p>
@@ -40,8 +40,8 @@
             {{-- CARNES --}}
             <div class="mt-24">
                 <div class="text-center max-w-2xl mx-auto">
-                    <h3 class="font-display font-bold text-2xl text-ink">Carnes</h3>
-                    <p class="mt-2 text-sm text-slate-500">Acompañadas de 2 guarniciones a elección</p>
+                    <h3 class="font-display font-bold text-2xl text-white">Carnes</h3>
+                    <p class="mt-2 text-sm text-slate-300">Acompañadas de 2 guarniciones a elección</p>
                 </div>
                 <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     @foreach ($meats as $meat)
@@ -50,7 +50,7 @@
                         </x-menu-card>
                     @endforeach
                 </div>
-                <p class="mt-6 text-sm text-slate-500 text-center">
+                <p class="mt-6 text-sm text-slate-300 text-center">
                     Guarniciones: {{ implode(' · ', $sides) }}
                 </p>
             </div>
@@ -58,7 +58,7 @@
             {{-- PASTAS --}}
             <div class="mt-24">
                 <div class="text-center max-w-2xl mx-auto">
-                    <h3 class="font-display font-bold text-2xl text-ink">Pastas</h3>
+                    <h3 class="font-display font-bold text-2xl text-white">Pastas</h3>
                 </div>
                 <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     @foreach ($pastas as $pasta)
@@ -68,13 +68,13 @@
                     @endforeach
                 </div>
 
-                <div class="mt-10 bg-white rounded-xl border border-slate-100 shadow-sm p-8">
-                    <h4 class="font-display font-bold text-ink">Arma tu Pasta</h4>
+                <div class="mt-10 bg-[#161616] rounded-xl border border-white/10 shadow-sm p-8">
+                    <h4 class="font-display font-bold text-white">Arma tu Pasta</h4>
                     <div class="mt-4 grid sm:grid-cols-3 gap-6">
                         @foreach ($pastaBuilder as $category => $options)
                             <div>
-                                <span class="block text-sm font-bold text-ink border-b-2 border-ink pb-2 mb-2">{{ $category }}</span>
-                                <ul class="text-sm text-slate-500 space-y-1">
+                                <span class="block text-sm font-bold text-white border-b-2 border-white pb-2 mb-2">{{ $category }}</span>
+                                <ul class="text-sm text-slate-300 space-y-1">
                                     @foreach ($options as $option)
                                         <li>{{ $option }}</li>
                                     @endforeach
@@ -89,12 +89,12 @@
             {{-- BEBIDAS --}}
             <div class="mt-24">
                 <div class="text-center max-w-2xl mx-auto">
-                    <h3 class="font-display font-bold text-2xl text-ink">Bebidas</h3>
+                    <h3 class="font-display font-bold text-2xl text-white">Bebidas</h3>
                 </div>
-                <div class="mt-10 max-w-2xl mx-auto bg-white rounded-xl border border-slate-100 shadow-sm divide-y divide-slate-100">
+                <div class="mt-10 max-w-2xl mx-auto bg-[#161616] rounded-xl border border-white/10 shadow-sm divide-y divide-white/10">
                     @foreach ($drinks as $drink)
                         <div class="flex items-center justify-between px-6 py-4">
-                            <span class="text-slate-700 font-medium">{{ $drink['name'] }}</span>
+                            <span class="text-white font-medium">{{ $drink['name'] }}</span>
                             <span class="font-display font-bold text-brand-600">&#8353;{{ $drink['price'] }}</span>
                         </div>
                     @endforeach
@@ -104,13 +104,13 @@
     </section>
 
     {{-- NOSOTROS / HISTORIA --}}
-    <section id="nosotros" class="bg-white py-24">
+    <section id="nosotros" class="bg-[#0d0d0d] py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
 
             <div>
-                <h2 class="font-display font-bold text-3xl md:text-4xl text-ink">Nuestra Historia</h2>
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-white">Nuestra Historia</h2>
 
-                <div class="mt-6 space-y-5 text-slate-600 leading-relaxed">
+                <div class="mt-6 space-y-5 text-slate-300 leading-relaxed">
                     <p>
                         Fabian: Desde pequeño los animales viven presentes en mi familia y siempre han sido
                         nuestros mejores amigos. Puntualmente mi mascota era un Gallo que me seguía a todas
@@ -130,12 +130,12 @@
                 <div class="mt-10 space-y-6">
                     @foreach ($features as $feature)
                         <div class="flex items-start gap-4">
-                            <span class="flex-none w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <span class="flex-none w-12 h-12 rounded-xl bg-brand-600/15 text-brand-500 flex items-center justify-center">
                                 <x-dynamic-component :component="'icon.' . $feature['icon']" class="w-6 h-6" />
                             </span>
                             <div>
-                                <h3 class="font-display font-bold text-ink">{{ $feature['title'] }}</h3>
-                                <p class="text-sm text-slate-500">{{ $feature['desc'] }}</p>
+                                <h3 class="font-display font-bold text-white">{{ $feature['title'] }}</h3>
+                                <p class="text-sm text-slate-300">{{ $feature['desc'] }}</p>
                             </div>
                         </div>
                     @endforeach
@@ -144,26 +144,26 @@
 
             <div class="relative pb-10 lg:pb-16">
                 {{-- TODO: sustituir por fotos reales del local y la masa artesanal --}}
-                <img src="/images/Identidad ROOSTER5.jpg" alt="Interior del restaurante"
+                <img src="/images/DSC00014.jpg" alt="Interior del restaurante"
                      loading="lazy" class="w-full h-80 md:h-96 object-cover rounded-2xl shadow-md">
             </div>
         </div>
     </section>
 
     {{-- CONTACTO / VISITANOS --}}
-    <section id="contacto" class="bg-slate-50 py-24">
+    <section id="contacto" class="bg-[#0d0d0d] py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-            <h2 class="font-display font-bold text-3xl md:text-4xl text-ink">Visítanos</h2>
-            <p class="mt-4 text-slate-500">Estamos aquí para servirte</p>
+            <h2 class="font-display font-bold text-3xl md:text-4xl text-white">Visítanos</h2>
+            <p class="mt-4 text-slate-300">Estamos aquí para servirte</p>
 
             <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 @foreach ($contactInfo as $info)
-                    <div class="bg-white rounded-xl p-8 text-center shadow-sm border border-slate-100">
-                        <span class="inline-flex w-14 h-14 rounded-full bg-brand-50 text-brand-600 items-center justify-center mb-4">
+                    <div class="bg-[#161616] rounded-xl p-8 text-center shadow-sm border border-white/10">
+                        <span class="inline-flex w-14 h-14 rounded-full bg-brand-600/15 text-brand-500 items-center justify-center mb-4">
                             <x-dynamic-component :component="'icon.' . $info['icon']" class="w-6 h-6" />
                         </span>
-                        <h3 class="font-display font-bold text-ink">{{ $info['title'] }}</h3>
-                        <p class="mt-2 text-sm text-slate-500 leading-relaxed">
+                        <h3 class="font-display font-bold text-white">{{ $info['title'] }}</h3>
+                        <p class="mt-2 text-sm text-slate-300 leading-relaxed">
                             @foreach ($info['lines'] as $line)
                                 {{ $line }}@unless ($loop->last) <br> @endunless
                             @endforeach

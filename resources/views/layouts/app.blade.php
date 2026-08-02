@@ -22,7 +22,6 @@
                     },
                     colors: {
                         brand: {
-<<<<<<< HEAD
                             50: '#fff4ef',
                             100: '#ffe1d0',
                             500: '#ff6b35',
@@ -30,15 +29,6 @@
                             700: '#c94315',
                         },
                         ink: '#000000',
-=======
-                            50: '#fef2f2',
-                            100: '#fee2e2',
-                            500: '#ef4444',
-                            600: '#dc2626',
-                            700: '#b91c1c',
-                        },
-                        ink: '#0f172a',
->>>>>>> 612a93f8311e374c2858e7099edcaf171d296e7f
                     },
                 },
             },
@@ -47,7 +37,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body class="font-sans text-slate-700 antialiased bg-white">
+<body class="font-sans text-slate-300 antialiased bg-[#0d0d0d]">
 
     @include('partials.nav')
 

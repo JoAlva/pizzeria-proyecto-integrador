@@ -14,7 +14,13 @@
       "Bash(composer validate *)",
       "Bash(git add *)",
       "Bash(git status *)",
-      "Bash(php artisan *)"
+      "Bash(php artisan *)",
+      "Bash(npm ls *)",
+      "Bash(npx --yes chromium-cli --help)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npx --yes playwright install chromium)",
+      "Bash(npm init *)",
+      "Bash(npm install *)"
     ]
   }
 }

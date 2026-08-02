@@ -2,10 +2,9 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid md:grid-cols-3 gap-12">
 
         <div>
-            <a href="#inicio" class="flex items-center gap-2.5">
-                <x-icon.logo class="w-7 h-7 text-brand-500" />
+            <a href="#inicio" class="flex items-center">
                 <span class="font-display font-extrabold text-white text-base md:text-lg leading-none">
-                    ROOSTER PIZZERIA AND GRILL
+                    <span class="text-red-600">R</span>O<span class="relative inline-block"><img src="/images/RoosterCrest.png" alt="" class="absolute -top-3 left-0 -translate-x-[35%] h-4 md:h-5 w-auto max-w-none object-contain pointer-events-none">O</span>STER PIZZERIA AND GRILL
                 </span>
             </a>
             <p class="mt-4 text-sm text-slate-400 max-w-xs">
