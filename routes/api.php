@@ -10,7 +10,8 @@ use App\Http\Controllers\IngredienteController;
 use App\Http\Controllers\RolController;
 use App\Http\Controllers\UsuarioController;
 
-Route::post('login', [AuthController::class, 'login']);
+Route::post('/login', [App\Http\Controllers\AuthController::class, 'login']);
+Route::post('/registro', [App\Http\Controllers\AuthController::class, 'registro']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('me', [AuthController::class, 'me']);

@@ -31,4 +31,29 @@ class AuthController extends Controller
             'rol' => $usuario->rol->nombre_rol
         ]);
     }
+
+public function registro(Request $request)
+{
+    $request->validate([
+        'nombre'    => 'required|string|max:100',
+        'correo'    => 'required|email|unique:usuarios,correo',
+        'contrasena'=> 'required|min:6',
+    ]);
+
+    $usuario = \App\Models\Usuario::create([
+        'nombre'    => $request->nombre,
+        'correo'    => $request->correo,
+        'contrasena'=> $request->contrasena,
+        'id_rol'    => 3
+    ]);
+
+    return response()->json([
+        'id_usuario' => $usuario->id_usuario,
+        'nombre'     => $usuario->nombre,
+        'correo'     => $usuario->correo,
+        'rol'        => 'cliente'
+    ], 201);
+}
+
+
 }
