@@ -31,7 +31,7 @@
         <a href="#menu" class="block font-medium text-white">Menú</a>
         <a href="#nosotros" class="block font-medium text-white">Nosotros</a>
         <a href="#contacto" class="block font-medium text-white">Contacto</a>
-        <a href="tel:+15551234567"
+        <a href="tel:+50688421596"
            class="flex items-center justify-center gap-2 bg-brand-600 text-white font-semibold px-5 py-3 rounded-full">
             <x-icon.phone class="w-4 h-4" />
             Llamar Ahora

@@ -24,18 +24,10 @@
 
         <div>
             <h4 class="text-white font-display font-bold mb-4">Síguenos</h4>
-            <div class="flex gap-3">
-                <a href="#" aria-label="Facebook"
-                   class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-600 flex items-center justify-center transition-colors">
-                    <x-icon.facebook class="w-4 h-4" />
-                </a>
-                <a href="#" aria-label="Instagram"
+            <div class="flex gap-1">
+                <a href="https://www.instagram.com/roosterpizza_cr?igsh=MTJ5ZnR4eGl6Nm11cQ==" aria-label="Instagram"
                    class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-600 flex items-center justify-center transition-colors">
                     <x-icon.instagram class="w-4 h-4" />
-                </a>
-                <a href="#" aria-label="Twitter"
-                   class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-600 flex items-center justify-center transition-colors">
-                    <x-icon.twitter class="w-4 h-4" />
                 </a>
             </div>
         </div>
